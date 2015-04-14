@@ -12,3 +12,7 @@ def booth():
 @app.route('/contesting.html')
 def contesting():
     return render_template('contesting.html')
+
+@app.route('/fun-run.html')
+def fun_run():
+    return render_template('fun-run.html')
