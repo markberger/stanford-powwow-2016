@@ -24,3 +24,4 @@ def deploy():
 	print "Uploading files to AFS..."
 	user = raw_input("SUNetID: ")
 	execute(pushToAFS, hosts=[user+'@'+HOST])
+	local("rm -rf build/")
